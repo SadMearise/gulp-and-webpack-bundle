@@ -30,6 +30,7 @@ const devTasks = gulp.series(reset, fonts, gulp.parallel(html));
 const buildTasks = gulp.series(reset, fonts, css, js, gulp.parallel(html, images));
 
 export { html }
+export { reset }
 export { js }
 export { css }
 export { images }

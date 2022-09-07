@@ -9,7 +9,8 @@
     "dev": "gulp && webpack serve --progress -c config/webpack.config.js",
     "build": "gulp build --build",
     "sprite": "gulp sprite",
-    "zip": "gulp deployZIP --build"
+    "zip": "gulp deployZIP --build",
+	"clean": "gulp reset"
   },
   "browserslist": "> 0.25%, not dead",
   "author": "",

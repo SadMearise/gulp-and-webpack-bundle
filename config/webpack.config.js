@@ -47,7 +47,7 @@ const copyPluginPatterns = () => {
 	const base = {
 		patterns: [
 			{
-				from: `${srcFolder}/files`,
+				from: `${srcFolder}/resources`,
 				to: `files`,
 				noErrorOnMissing: true,
 				force: true
