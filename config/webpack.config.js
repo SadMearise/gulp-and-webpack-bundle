@@ -88,7 +88,11 @@ const config = {
 	devServer: {
 		historyApiFallback: true,
 		static: paths.build,
-		open: true,
+		open: {
+			app: {
+				name: 'chrome', // 'Chrome' is 'Google Chrome' on macOS, 'google-chrome' on Linux, and 'chrome' on Windows.
+			},
+		},
 		compress: true,
 		port: "auto",
 		hot: true,
@@ -137,6 +141,7 @@ const config = {
 							},
 						},
 					},
+					
 				],
 			},
 			{
