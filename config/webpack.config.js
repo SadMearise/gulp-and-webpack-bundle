@@ -77,7 +77,8 @@ const config = {
 	cache: cache(),
 	devtool: isDev ? "inline-source-map" : false,
 	entry: {
-		app: ['@babel/polyfill', `${paths.src}/js/app.js`],
+		// app: ['@babel/polyfill', `${paths.src}/js/app.js`],
+		app: `${paths.src}/js/app.js`,
 	},
 	output: {
 		path: `${paths.build}`,
@@ -144,16 +145,16 @@ const config = {
 					
 				],
 			},
-			{
-				test: /\.js$/,
-				exclude: /node_modules/,
-				use: {
-					loader: "babel-loader",
-					options: {
-						presets: ['@babel/preset-env']
-					}
-				}
-			}
+			// {
+			// 	test: /\.js$/,
+			// 	exclude: /node_modules/,
+			// 	use: {
+			// 		loader: "babel-loader",
+			// 		options: {
+			// 			presets: ['@babel/preset-env']
+			// 		}
+			// 	}
+			// }
 		],
 	},
 	plugins: [
